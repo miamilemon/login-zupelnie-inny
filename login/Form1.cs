@@ -74,7 +74,7 @@ namespace login
             else
                 tak2 = true;
             if (cap.Text != txt0)
-                MessageBox.Show("Nieprawidłowa CZAPcza");
+                MessageBox.Show("Nieprawidłowa CZAPAcza");
             else
                 tak3 = true;
             if (tak1 && tak2 && tak3 == true)
