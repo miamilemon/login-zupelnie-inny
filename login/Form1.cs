@@ -62,10 +62,27 @@ namespace login
 
         private void button1_Click(object sender, EventArgs e)
         {
+            bool tak1 = false;
+            bool tak2 = false;
+            bool tak3 = false;
+            if (login.Text!="admin")
+                MessageBox.Show("Nieprawidłowy login");
+            else
+                tak1 = true;
+            if (haslo.Text!="Qwerty1@34")
+                MessageBox.Show("Nieprawidłowe hasło");
+            else
+                tak2 = true;
             if (cap.Text != txt0)
                 MessageBox.Show("Nieprawidłowa CZAPcza");
             else
-                MessageBox.Show("gitowa");
+                tak3 = true;
+            if (tak1 && tak2 && tak3 == true)
+            {
+                Form2 f2 = new Form2();
+                f2.ShowDialog();
+            }
+
 
 
 
