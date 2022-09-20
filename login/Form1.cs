@@ -13,17 +13,62 @@ namespace login
 {
     public partial class Form1 : Form
     {
+
+        int liczba;
+        string txt0;
+
         public Form1()
         {
             InitializeComponent();
-            pictureBox1.Image = imageList1.Images.Count > 0 ? imageList1.Images[0] : null;
+            Random rnd = new Random();
+            liczba = rnd.Next(6);
+            pictureBox1.Image = imageList1.Images[liczba];
+            if (liczba == 0)
+                txt0 = "mxyxw";
+            if (liczba == 1)
+                txt0 = "b5nmm";
+            if (liczba == 2)
+                txt0 = "74853";
+            if (liczba == 3)
+                txt0 = "cg5dd";
+            if (liczba == 4)
+                txt0 = "x3deb";
+            if (liczba == 5)
+                txt0 = "befhd";
+            if (liczba == 6)
+                txt0 = "c7gb3";
         }
 
         private void label5_Click(object sender, EventArgs e)
         {
             Random rnd = new Random();
-            int liczba = rnd.Next(6);
+            liczba = rnd.Next(6);
             pictureBox1.Image = imageList1.Images[liczba];
+            if (liczba == 0)
+                txt0 = "mxyxw";
+            if (liczba == 1)
+                txt0 = "b5nmm";
+            if (liczba == 2)
+                txt0 = "74853";
+            if (liczba == 3)
+                txt0 = "cg5dd";
+            if (liczba == 4)
+                txt0 = "x3deb";
+            if (liczba == 5)
+                txt0 = "befhd";
+            if (liczba == 6)
+                txt0 = "c7gb3";
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (cap.Text != txt0)
+                MessageBox.Show("Nieprawidłowa CZAPcza");
+            else
+                MessageBox.Show("gitowa");
+
+
+
         }
     }
 }
