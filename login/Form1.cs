@@ -79,6 +79,7 @@ namespace login
                 tak3 = true;
             if (tak1 && tak2 && tak3 == true)
             {
+                this.Hide();
                 Form2 f2 = new Form2();
                 f2.ShowDialog();
             }
