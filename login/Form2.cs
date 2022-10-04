@@ -50,12 +50,12 @@ namespace login
                     }
                     if (com2.SelectedIndex == 2)
                     {
-                        if (line.Split(' ')[0].Contains(textBox1.Text))
+                        if (line.Split(' ')[0].Contains(textBox5.Text))
                             textBox1.AppendText(line + "\r\n");
                     }
                     if (com2.SelectedIndex == 1)
                     {
-                        if (line.Split(' ')[0].StartsWith(textBox1.Text))
+                        if (line.Split(' ')[0].StartsWith(textBox5.Text))
                             textBox1.AppendText(line + "\r\n");
                     }
                 }
@@ -68,12 +68,12 @@ namespace login
                     }
                     if (com2.SelectedIndex == 2)
                     {
-                        if (line.Split(' ')[1].Contains(textBox1.Text))
+                        if (line.Split(' ')[1].Contains(textBox5.Text))
                             textBox1.AppendText(line + "\r\n");
                     }
                     if (com2.SelectedIndex == 1)
                     {
-                        if (line.Split(' ')[1].StartsWith(textBox1.Text))
+                        if (line.Split(' ')[1].StartsWith(textBox5.Text))
                             textBox1.AppendText(line + "\r\n");
                     }
                 }
@@ -86,12 +86,12 @@ namespace login
                     }
                     if (com2.SelectedIndex == 2)
                     {
-                        if (line.Split(' ')[2].Contains(textBox1.Text))
+                        if (line.Split(' ')[2].Contains(textBox5.Text))
                             textBox1.AppendText(line + "\r\n");
                     }
                     if (com2.SelectedIndex == 1)
                     {
-                        if (line.Split(' ')[2].StartsWith(textBox1.Text))
+                        if (line.Split(' ')[2].StartsWith(textBox5.Text))
                             textBox1.AppendText(line + "\r\n");
                     }
                 }
