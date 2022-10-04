@@ -13,12 +13,12 @@ namespace login
 {
     public partial class Form1 : Form
     {
-
         int liczba;
         string txt0;
 
         public Form1()
         {
+            
             InitializeComponent();
             Random rnd = new Random();
             liczba = rnd.Next(6);

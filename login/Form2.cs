@@ -15,7 +15,10 @@ namespace login
     {
         public Form2()
         {
+            
             InitializeComponent();
+            com1.SelectedIndex = 0;
+            com2.SelectedIndex = 0;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -25,9 +28,14 @@ namespace login
             // zapisywanie do pliku
             using (StreamWriter outputFile = new StreamWriter(System.IO.Path.Combine(docPath, "uczen.txt"),true))
             {
-                outputFile.WriteLine(textBox2.Text+" "+textBox3.Text+" "+textBox4.Text+'\n');
+                outputFile.WriteLine(textBox2.Text+" "+textBox3.Text+" "+textBox4.Text);
                 SaveFileDialog theDialog = new SaveFileDialog();
             }
+        }
+
+        private void wyszukaj_Click(object sender, EventArgs e)
+        {
+            string text = System.IO.File.ReadAllText(@"C:\Users\student\Desktop\uczen.txt");
         }
     }
 }

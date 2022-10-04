@@ -35,7 +35,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.com1 = new System.Windows.Forms.ComboBox();
             this.com2 = new System.Windows.Forms.ComboBox();
-            this.com3 = new System.Windows.Forms.ComboBox();
             this.wyszukaj = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -45,6 +44,7 @@
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.textBox5 = new System.Windows.Forms.TextBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -70,9 +70,9 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.textBox5);
             this.tabPage1.Controls.Add(this.textBox1);
             this.tabPage1.Controls.Add(this.wyszukaj);
-            this.tabPage1.Controls.Add(this.com3);
             this.tabPage1.Controls.Add(this.com2);
             this.tabPage1.Controls.Add(this.com1);
             this.tabPage1.Controls.Add(this.label1);
@@ -114,6 +114,9 @@
             // com1
             // 
             this.com1.FormattingEnabled = true;
+            this.com1.Items.AddRange(new object[] {
+            "nazwisko",
+            "imie"});
             this.com1.Location = new System.Drawing.Point(103, 127);
             this.com1.Name = "com1";
             this.com1.Size = new System.Drawing.Size(121, 21);
@@ -122,18 +125,14 @@
             // com2
             // 
             this.com2.FormattingEnabled = true;
+            this.com2.Items.AddRange(new object[] {
+            "rozpoczyna się od",
+            "równa się",
+            "zawiera"});
             this.com2.Location = new System.Drawing.Point(286, 127);
             this.com2.Name = "com2";
             this.com2.Size = new System.Drawing.Size(121, 21);
             this.com2.TabIndex = 2;
-            // 
-            // com3
-            // 
-            this.com3.FormattingEnabled = true;
-            this.com3.Location = new System.Drawing.Point(494, 126);
-            this.com3.Name = "com3";
-            this.com3.Size = new System.Drawing.Size(121, 21);
-            this.com3.TabIndex = 3;
             // 
             // wyszukaj
             // 
@@ -143,6 +142,7 @@
             this.wyszukaj.TabIndex = 4;
             this.wyszukaj.Text = "wyszukaj";
             this.wyszukaj.UseVisualStyleBackColor = true;
+            this.wyszukaj.Click += new System.EventHandler(this.wyszukaj_Click);
             // 
             // textBox1
             // 
@@ -213,6 +213,13 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(494, 127);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(100, 20);
+            this.textBox5.TabIndex = 6;
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -239,7 +246,6 @@
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.Button wyszukaj;
-        private System.Windows.Forms.ComboBox com3;
         private System.Windows.Forms.ComboBox com2;
         private System.Windows.Forms.ComboBox com1;
         private System.Windows.Forms.Label label1;
@@ -251,5 +257,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox textBox5;
     }
 }
