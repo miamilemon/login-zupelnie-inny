@@ -48,12 +48,12 @@ namespace login
                         if (textBox5.Text == line.Split(' ')[0])
                             textBox1.AppendText(line + "\r\n");
                     }
-                    if (com2.SelectedIndex == 2)
+                    if (com2.SelectedIndex == 1)
                     {
                         if (line.Split(' ')[0].Contains(textBox5.Text))
                             textBox1.AppendText(line + "\r\n");
                     }
-                    if (com2.SelectedIndex == 1)
+                    if (com2.SelectedIndex == 2)
                     {
                         if (line.Split(' ')[0].StartsWith(textBox5.Text))
                             textBox1.AppendText(line + "\r\n");
@@ -66,12 +66,12 @@ namespace login
                         if (textBox5.Text == line.Split(' ')[1])
                             textBox1.AppendText(line + "\r\n");
                     }
-                    if (com2.SelectedIndex == 2)
+                    if (com2.SelectedIndex == 1)
                     {
                         if (line.Split(' ')[1].Contains(textBox5.Text))
                             textBox1.AppendText(line + "\r\n");
                     }
-                    if (com2.SelectedIndex == 1)
+                    if (com2.SelectedIndex == 2)
                     {
                         if (line.Split(' ')[1].StartsWith(textBox5.Text))
                             textBox1.AppendText(line + "\r\n");
@@ -84,12 +84,12 @@ namespace login
                         if (textBox5.Text == line.Split(' ')[2])
                             textBox1.AppendText(line + "\r\n");
                     }
-                    if (com2.SelectedIndex == 2)
+                    if (com2.SelectedIndex == 1)
                     {
                         if (line.Split(' ')[2].Contains(textBox5.Text))
                             textBox1.AppendText(line + "\r\n");
                     }
-                    if (com2.SelectedIndex == 1)
+                    if (com2.SelectedIndex == 2)
                     {
                         if (line.Split(' ')[2].StartsWith(textBox5.Text))
                             textBox1.AppendText(line + "\r\n");
