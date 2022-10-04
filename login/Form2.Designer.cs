@@ -115,8 +115,9 @@
             // 
             this.com1.FormattingEnabled = true;
             this.com1.Items.AddRange(new object[] {
+            "imie",
             "nazwisko",
-            "imie"});
+            "klasa"});
             this.com1.Location = new System.Drawing.Point(103, 127);
             this.com1.Name = "com1";
             this.com1.Size = new System.Drawing.Size(121, 21);
@@ -126,9 +127,9 @@
             // 
             this.com2.FormattingEnabled = true;
             this.com2.Items.AddRange(new object[] {
-            "rozpoczyna się od",
             "równa się",
-            "zawiera"});
+            "zawiera",
+            "rozpoczyna się od"});
             this.com2.Location = new System.Drawing.Point(286, 127);
             this.com2.Name = "com2";
             this.com2.Size = new System.Drawing.Size(121, 21);
