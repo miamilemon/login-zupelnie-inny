@@ -79,9 +79,9 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(218, 224);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(321, 13);
+            this.label4.Size = new System.Drawing.Size(324, 13);
             this.label4.TabIndex = 3;
-            this.label4.Text = "Wpisz znaki które widzisz na poniższym obrazku, aby kontytuować";
+            this.label4.Text = "Wpisz znaki które widzisz na poniższym obrazku, aby kontynuować";
             // 
             // label5
             // 

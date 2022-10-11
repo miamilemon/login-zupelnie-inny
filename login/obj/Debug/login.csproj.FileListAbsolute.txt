@@ -10,3 +10,17 @@ C:\Users\kosmi\Source\Repos\login\login\obj\Debug\login.csproj.GenerateResource.
 C:\Users\kosmi\Source\Repos\login\login\obj\Debug\login.csproj.CoreCompileInputs.cache
 C:\Users\kosmi\Source\Repos\login\login\obj\Debug\login.exe
 C:\Users\kosmi\Source\Repos\login\login\obj\Debug\login.pdb
+C:\Users\kosmi\source\repos\login-zupelnie-inny\login\bin\Debug\Database1.mdf
+C:\Users\kosmi\source\repos\login-zupelnie-inny\login\bin\Debug\Database1_log.ldf
+C:\Users\kosmi\source\repos\login-zupelnie-inny\login\bin\Debug\login.exe.config
+C:\Users\kosmi\source\repos\login-zupelnie-inny\login\bin\Debug\login.exe
+C:\Users\kosmi\source\repos\login-zupelnie-inny\login\bin\Debug\login.pdb
+C:\Users\kosmi\source\repos\login-zupelnie-inny\login\obj\Debug\login.csproj.AssemblyReference.cache
+C:\Users\kosmi\source\repos\login-zupelnie-inny\login\obj\Debug\login.csproj.SuggestedBindingRedirects.cache
+C:\Users\kosmi\source\repos\login-zupelnie-inny\login\obj\Debug\login.Form1.resources
+C:\Users\kosmi\source\repos\login-zupelnie-inny\login\obj\Debug\login.Form2.resources
+C:\Users\kosmi\source\repos\login-zupelnie-inny\login\obj\Debug\login.Properties.Resources.resources
+C:\Users\kosmi\source\repos\login-zupelnie-inny\login\obj\Debug\login.csproj.GenerateResource.cache
+C:\Users\kosmi\source\repos\login-zupelnie-inny\login\obj\Debug\login.csproj.CoreCompileInputs.cache
+C:\Users\kosmi\source\repos\login-zupelnie-inny\login\obj\Debug\login.exe
+C:\Users\kosmi\source\repos\login-zupelnie-inny\login\obj\Debug\login.pdb
