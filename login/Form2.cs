@@ -29,14 +29,11 @@ namespace login
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string docPath = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
-
-            // zapisywanie do pliku
-            using (StreamWriter outputFile = new StreamWriter(System.IO.Path.Combine(docPath, "uczen.txt"), true))
-            {
-                outputFile.WriteLine(textBox2.Text + " " + textBox3.Text + " " + textBox4.Text);
-                SaveFileDialog theDialog = new SaveFileDialog();
-            }
+            SqlConnection connect = new SqlConnection(conn);
+            connect.Open();
+            SqlCommand dodajemy = new SqlCommand("INSERT INTO [Table] ([Imie],[Nazwisko],[Klasa]) VALUES ('"+textBox2.Text+"','"+textBox3.Text+"','"+textBox4.Text+"')",connect);
+            dodajemy.ExecuteNonQuery();
+            connect.Close();
         }
 
         private void wyszukaj_Click(object sender, EventArgs e)
@@ -77,34 +74,64 @@ namespace login
                 }
                 if (com1.SelectedIndex == 1)
                 {
-                    switch (com2.SelectedIndex)
-                    {
-                        case 0:
-
-                            break;
-                        case 1:
-
-                            break;
-                        case 2:
-
-                            break;
-                    }
+                switch (com2.SelectedIndex)
+                {
+                    case 0:
+                        SqlCommand szukamy = new SqlCommand("SELECT * FROM [Table] WHERE [Nazwisko] = '" + textBox5.Text + "'", connect);
+                        SqlDataReader czytaj = szukamy.ExecuteReader();
+                        while (czytaj.Read())
+                        {
+                            textBox1.AppendText(czytaj.GetString(1) + " " + czytaj.GetString(2) + " " + czytaj.GetString(3) + "\r\n");
+                        }
+                        break;
+                    case 1:
+                        SqlCommand szukamy2 = new SqlCommand("SELECT* FROM[Table] WHERE[Nazwisko] LIKE '%" + textBox5.Text + "%'", connect);
+                        SqlDataReader czytaj2 = szukamy2.ExecuteReader();
+                        while (czytaj2.Read())
+                        {
+                            textBox1.AppendText(czytaj2.GetString(1) + " " + czytaj2.GetString(2) + " " + czytaj2.GetString(3) + "\r\n");
+                        }
+                        break;
+                    case 2:
+                        SqlCommand szukamy3 = new SqlCommand("SELECT* FROM[Table] WHERE[Nazwisko] LIKE '" + textBox5.Text + "%'", connect);
+                        SqlDataReader czytaj3 = szukamy3.ExecuteReader();
+                        while (czytaj3.Read())
+                        {
+                            textBox1.AppendText(czytaj3.GetString(1) + " " + czytaj3.GetString(2) + " " + czytaj3.GetString(3) + "\r\n");
+                        }
+                        break;
                 }
+            }
                 if (com1.SelectedIndex == 2)
                 {
-                    switch (com2.SelectedIndex)
-                    {
-                        case 0:
-
-                            break;
-                        case 1:
-
-                            break;
-                        case 2:
-
-                            break;
-                    }
+                switch (com2.SelectedIndex)
+                {
+                    case 0:
+                        SqlCommand szukamy = new SqlCommand("SELECT * FROM [Table] WHERE [Klasa] = '" + textBox5.Text + "'", connect);
+                        SqlDataReader czytaj = szukamy.ExecuteReader();
+                        while (czytaj.Read())
+                        {
+                            textBox1.AppendText(czytaj.GetString(1) + " " + czytaj.GetString(2) + " " + czytaj.GetString(3) + "\r\n");
+                        }
+                        break;
+                    case 1:
+                        SqlCommand szukamy2 = new SqlCommand("SELECT* FROM[Table] WHERE[Klasa] LIKE '%" + textBox5.Text + "%'", connect);
+                        SqlDataReader czytaj2 = szukamy2.ExecuteReader();
+                        while (czytaj2.Read())
+                        {
+                            textBox1.AppendText(czytaj2.GetString(1) + " " + czytaj2.GetString(2) + " " + czytaj2.GetString(3) + "\r\n");
+                        }
+                        break;
+                    case 2:
+                        SqlCommand szukamy3 = new SqlCommand("SELECT* FROM[Table] WHERE[Klasa] LIKE '" + textBox5.Text + "%'", connect);
+                        SqlDataReader czytaj3 = szukamy3.ExecuteReader();
+                        while (czytaj3.Read())
+                        {
+                            textBox1.AppendText(czytaj3.GetString(1) + " " + czytaj3.GetString(2) + " " + czytaj3.GetString(3) + "\r\n");
+                        }
+                        break;
                 }
+            }
                 connect.Close();
         }
     }
